@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <img id="morph" src="./Images/Red-eyes_Chick.png">
+    <button onclick="myAction()">morph</button>
+    <div class="textcover">
+     <p id="trial" onclick="myFunction()">Now you see me</p>
+    </div>
+    <br>
+    <button onclick="myDisplay()" id="myDIV">Don't click on me or I'll vanish!</button>
+    <script>
+      function myFunction() {
+        document.getElementById("trial").innerHTML = "Now you don't";
+      }
+      function myAction() {
+        document.getElementById("morph").src = "./Images/Red-eyes.png";
+        document.body.style.background = "red";
+      }
+      function myDisplay() {
+        document.getElementById("myDIV").style.display = "none";
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
